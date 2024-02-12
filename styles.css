@@ -1,0 +1,1045 @@
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+  }
+
+
+  #header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: right;
+    padding: 10px;
+  
+}
+
+
+#header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #d9cbcb; /* for a border around each li */
+  padding: 2px 4px;
+  border-radius: 8px; /* for rounded corners */
+  transition: background-color 0.3s; /* for transition for a smooth effect */
+}
+
+#header nav ul li.active {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #f40303; /* for a border around each li */
+  padding: 2px 4px;
+  border-radius: 8px; /* for rounded corners */
+  transition: background-color 0.3s; /* for transition for a smooth effect */
+}
+
+.head a.active,
+.head a:hover{
+  
+  background: linear-gradient(to right, #4f058ff4, #ff00c3);  /* for hovering colors */
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+
+#header nav ul li:hover,
+#header nav ul li.active {
+  background-color: #f0f0f0; /* Background color for hover and when the item is active */
+  color: #f40606;
+}
+
+
+#header nav ul li.active {
+  background-color: #f0f0f0; /* Background color for active li */
+  color: #333; /* Text color for active li */
+}
+
+.contant{
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  align-items: center;
+  padding: 10px;
+}
+
+.head{
+  position: sticky;
+}
+.name {
+  position: sticky;
+  display: inline-block;
+}
+
+.name::before, .name::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;               /*using before and after of css part */
+  bottom: 0;
+  background: #02dee9;
+  transition: 0.5s;
+}
+
+.name::before {
+  left: 50%;
+}
+
+.name::after {
+  right: 50%;
+}
+
+.name:hover::before, .name:hover::after {
+  width: 50%;
+}
+.name {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .name::before, .name::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    background: #02dee9;
+    transition: 0.5s;
+  }
+  
+  .name::before {
+    left: 50%;
+  }
+  
+  .name::after {
+    right: 50%;
+  }
+  
+  .name:hover::before, .name:hover::after {
+    width: 50%;
+  }
+ 
+  .getintouch{
+    background: #5a31a6;
+    -webkit-background-clip: text;/* CSS for the getintouch */
+    color: transparent;
+  }
+/* get in touch*/
+  .getintouch {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .getintouch::before, .getintouch::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    background: #02dee9;
+    transition: 0.5s;
+  }
+  
+  .getintouch::before {
+    left: 50%;
+  }
+  
+  .getintouch::after {
+    right: 50%;
+  }
+  
+  .getintouch:hover::before, .getintouch:hover::after {
+    width: 50%;
+  }
+ 
+  
+  /* Flex layout for header and footer */
+  header {
+    display: flex;
+    position:sticky;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(45deg, rgb(97, 165, 128), rgb(217, 146, 146));
+    padding: 0.5em;
+    z-index: 101;
+  }
+  footer {
+    display: flex;
+    position:sticky;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(45deg, rgb(97, 165, 128), rgb(217, 146, 146));
+    padding: 0.5em;
+    z-index: 101;
+  }
+
+
+
+  /* Center footer items */
+  footer {
+    justify-content: center;
+    background-color: #bcb1b1 !important;
+  }
+
+  
+  
+  /* Style for navigation links */
+  .head nav ul {
+    list-style: none;
+    position: sticky;
+    padding: 0.5em;
+    display: flex;
+    z-index: 100;
+  }
+  
+  nav li {
+    margin-right: 1em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    border: 1px solid transparent; /* Border for links */
+    padding: 0.5em;
+  }
+  
+  nav a:hover {
+    border-color: rgb(28, 28, 64); /* Change border color on hover */
+  }
+
+  
+/* navbar */
+
+.logo{
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: 600;
+  pointer-events: visible;
+
+}
+
+.head a {
+  font-size: 18px;
+  color:aqua;
+  margin-left: 15px;
+  font-weight: 500;
+}
+  /* Main title with 2-color gradient */
+  h1 {
+    background: linear-gradient(to right, #4f058ff4, #ff00c3); /*for the name dilp kumar */
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+
+  .home{
+    background-color:  #dbe6fa;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+ .home-content h1{
+    font-size: 56px;
+    font-weight: 600;
+    
+ }
+ .home-content p{
+    font-size: 16px;
+ }
+ .btn{
+    
+  display: inline-flex;
+  padding: 12px 28px;
+  background: linear-gradient(45deg, rgba(238, 4, 4, 0.592), rgb(97, 230, 82));;
+  border-radius: 40px;
+  font-size: 26px;
+  color: #3207f0;
+  letter-spacing: 1px;
+  font-weight: 600;
+ 
+}
+.btn:hover{
+  box-shadow: 0 0 5px rgb(255, 0, 0),
+  0 0 25px cyan, 0 0 50px cyan,
+  0 0 100px cyan,0 0 250px rgb(255, 38, 0)
+}
+
+
+
+/* ABOUTCSS */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: #eff4fd;
+}
+
+
+.detel {
+  margin-top: 13%;
+  margin-left: 8%;
+}
+
+.detel h1 {
+  font-size: 50px;
+  background: linear-gradient(45deg, rgb(204, 250, 2), rgba(116, 30, 2, 0.337));
+  margin-bottom: 20px;
+}
+
+span {
+  color: rgb(255, 0, 0);
+}
+
+.detel p {
+  color: #bcb1b1;
+  line-height: 22px;
+}
+
+.down {
+  color: orange;
+  background-color: #bcb1b1;
+}
+
+.detel a {
+  color: #000103;
+  background: #bcb1b1;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.toys {
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.box {
+  color: green;
+}
+
+/* ABOUTME CSS */
+
+.container-box{
+  background-color:  #dbe6fa;
+  padding:5%;
+}
+
+.info-display {
+  width: 100%;
+  display: flex;
+  padding-top: 2%;
+  padding-inline-start: 5%;
+}
+
+.ABOUTME {
+  text-align: center;
+  padding-top: 8%;
+  background: linear-gradient(to right,to right, #bd0a0a, #06d45c); /* Example gradient colors */
+    -webkit-background-clip: text;
+    color: transparent;
+  margin-top:-12%;
+  font-size: 40px;
+  font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+}
+
+.description {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 2%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #121111;
+  font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+}
+
+.info {                      /*information padding and margin  */
+  padding-left: 4%;
+  margin-left: 30px;
+}
+
+.info span {
+  margin-right: 5px;
+  color: #121111;
+}
+
+.info h1 {
+  width: 100%;
+  font-size: 35PX;
+  font-weight: bold;
+  background: linear-gradient(to right,to right, #bd0a0a, #06d45c);
+    -webkit-background-clip: text;
+    color: transparent;
+  margin-left: 10%;
+  font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+}
+
+.info li {
+  margin-left: 3%;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+  font-weight: 400;
+  padding: 5px;
+  color: #121111;
+}
+
+.contant {
+  margin-left: 7%;
+  margin-top: 1%;
+  color: rgb(0, 68, 255);
+}
+
+.contant .media {
+  padding: 15px;
+  display: inline !important;
+  justify-content: wrap;
+  color: rgb(22, 11, 230);
+}
+
+.contant .media a {
+  color: rgb(10, 39, 228);
+}
+
+.contant .media a:hover {
+  color: rgb(0, 254, 254);
+}
+
+.interest h1 {
+  width: 100%;
+  font-size: 35PX;
+  font-weight: bold;
+  color: background: linear-gradient(to right, #ed0451, #b0ff06);
+  -webkit-background-clip: text;
+  color: transparent;;
+  margin-left : 0%;
+  font-family : "Segoe UI", Roboto, Helvetica,Arial, serif;
+}
+
+.interest {
+  border-left: 3px solid rgb(41, 6, 238);
+  height: 290px;
+  right: 30%;
+  left: 50%;
+  margin-left: 20px;
+  padding-left: 5%;
+  padding-right: 3%; 
+}
+
+.interest ul li {
+  padding: 3%;
+  font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+  margin-right: 1%;
+  padding-right: 2%;
+  padding-left: 1%;
+  font-size: 16px;
+  font-weight: bold !important;
+  color: #bcb1b1;
+}
+
+.language {
+  padding-left: 5%;
+  border-left: 3px solid rgb(22, 6, 245);
+  height: 290px;
+  right: 30%;
+  left: 50%;
+  margin-left: 20px;
+}
+.contant .media a i:hover {
+  color: rgb(0, 26, 255);
+}
+
+/* education */
+
+
+/*education mode code */
+#education{
+  background-color:  #dbe6fa;;
+}
+.college-info {
+  width: auto;
+  padding: 20px;
+  border: 1px solid black;
+  padding-bottom: 10px;
+  margin-left: 3%;
+  margin-right: auto;
+  text-align: center !important;
+  display: flex;
+  /* color: orange; */
+}
+
+
+
+ /* getin touch */
+
+ .get-in-touch{
+  background-color:  #dbe6fa;
+  color:#000103;
+}
+
+ .get-in-touch {
+
+     
+  display: grid !important;
+}
+
+
+.contant {
+  
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  align-items: center;
+  padding: 10px;
+  
+}
+.contant-low{
+   margin-top: 1%;
+   margin-left:2%;
+   align-content: center;
+                                     /* contant media and effects */
+}
+.contant .media {
+   padding: 3%;
+   /* display: inline !important; */
+   justify-content: wrap;
+   color: rgb(14, 13, 13);
+}
+
+.contant .media a i {
+   color: black;
+}
+
+.get-in-touch.contant {
+   margin-left: 30%;
+   color: #000103;
+   color: rgb(247, 195, 84);
+}
+
+.get-tittle {
+   margin-top: 5%;
+   margin-left: 5%;
+   background: linear-gradient(to right, #bd0a0a, #d4069d);
+    -webkit-background-clip: text;
+    color: transparent;
+   background-color: rgba(0, 255, 255, 0.178);
+}
+/*footer*/
+.footer nav ul {
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  list-style: disc inside;
+  
+}
+
+.head a {
+  font-size: 18px;
+  color:rgb(0, 204, 255);
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.footer a {
+  font-size: 18px;
+  color:rgb(0, 204, 255);
+  margin-left: -10px;
+  font-weight: 500;
+}
+
+#footer p{
+  width: 400px;
+  margin-left: 10px;
+  color: #000103;
+}
+.footer .nav-link {
+  display: inline;                    /* footer alignments and display */
+  padding: 0.5rem 1rem;
+}
+
+
+.contant{
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+}
+  
+.contant {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 55px;
+  color: rgb(14, 13, 13);
+  font-size: 20px;
+  padding: 1%;
+  margin-top: auto; /* Pushes .contant to the middle vertically */
+}
+
+.contant .media {
+  padding: 15px;
+  display: inline !important;
+  justify-content: wrap;
+  color: rgb(14, 13, 13);
+}
+
+.contant .media a i {
+  color: black;
+}
+.contant .media{
+  display: flex;
+  align-items: center;
+  justify-content: wrap;
+  flex-direction: row;
+  
+}
+/* contant card */
+.contant-card {
+  width: 50%;
+  margin-top: -15%;
+  margin-bottom: 1%;
+  height: 15%;
+  padding-left: 80%;
+  padding: 50px;
+ 
+  box-sizing: border-box; border: 1px solid rgb(13, 74, 241);
+   box-shadow: 1px 2px 2px 3px rgb(214, 21, 118); 
+  border-radius: 2px;
+  margin-left: 45%;
+  padding-bottom: 1%;
+}
+
+.contant-us {
+  margin-left: 10%;
+}
+
+.contant-card h2 {
+  color: rgb(12, 117, 238);
+}
+
+
+  /* Media queries for small devices */
+  @media (max-width: 768px) {
+    header, footer {
+      flex-direction: column;
+      
+    }
+  
+    nav ul {
+      flex-direction: column;         /* media quaries for the flex items */
+     
+    }
+  
+    nav li {
+      margin-bottom: 1em;
+    }
+    .contant{
+      flex-direction: column;
+      
+    }
+    footer {
+      display: flex;
+      position:sticky;
+      width: 100%;
+      height: 700px;
+      justify-content: space-between;
+      background: linear-gradient(45deg, rgb(97, 165, 128), rgb(217, 146, 146));
+      padding: 0.5em;
+      z-index: 101;
+    }
+    .contant {
+      margin-left: -17%;
+      margin-top: 1%;
+      margin-bottom: -33%;
+      color: rgb(0, 68, 255);
+    }
+    .contant nav li{
+      margin-bottom: 10%;
+    }
+  }
+  
+
+ 
+  
+  @media (min-width: 768px) {
+    #footer nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #footer nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .nav-link{
+      display: inline;
+    }
+}
+
+
+@media (min-width: 768px) {
+  #footer {
+      flex-direction: row; /* Align items horizontally */
+      justify-content: flex-start; /* Align items to the left */
+  }
+  
+  #footer nav {
+      margin-top: 0; /* Reset the margin for the navigation */
+  }
+}
+
+
+
+  /* education */
+  .edu {
+    background: white;
+}
+.edutittle {
+    width: 100%;
+    font-size: 35PX;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    font-weight: 400 !important;
+    background: linear-gradient(to right, #bd0a0acf, #110bc1ab); /*for the name dilp kumar */
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, #bd0a0acf, #110bc1ab); /*for the name dilp kumar */
+    -webkit-background-clip: text;
+    color: transparent;;
+}
+.edutittle h1 {
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+.college .college-info:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.0);
+    z-index: 0.2;
+}
+.college-info {
+    width: auto;
+    padding: 20px;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 3%;
+    margin-right: auto;
+    text-align: center !important;
+    display: flex;
+    /* color: orange; */
+}
+
+
+.college-info h1 {
+    /* font-size: 35px; */
+    text-align: center;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.college-info h2 {
+    text-align: center;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    font-size: 14px;
+    color: rgb(235, 151, 103) !important;
+}
+.college-info h3 {
+    text-align: center;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    font-size: 14px;
+ 
+}
+.college-info h4 {
+    text-align: center;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    font-size: 14px;
+    margin-left: -20%;
+    color: rgb(11, 214, 11);
+}
+.logo a img{
+   width: 40px !important;
+   height: 40px;
+   margin-left: -3%;
+}
+.edu-info {
+   text-align: center;
+    color: rgb(109, 102, 102);
+}
+.edu-info h3 {
+    color: orange;
+}
+.edu-info h2 {
+    color: rgb(29, 28, 27);
+  
+}
+
+  /* .project */
+
+  .project{
+    background-color:  #dbe6fa;
+    padding: -40%;
+  }
+  .project h1 {
+    font-size: 50px;
+    padding: 2%;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: rgb(5, 5, 0);
+    background: linear-gradient(to right, #bd0a0acf, #110bc1ab); /*for the name dilp kumar */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    font-size: 40px;
+}
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This will distribute space around the items */
+  align-items: flex-start;
+}
+
+.cards {
+  margin: 10px; 
+  width: calc(33.333% - 20px); /* Adjust width to account for margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.cards:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.card {
+  width: 100%;
+}
+
+
+@media (min-width: 768px) and (max-width: 9999px) {
+ 
+#footer nav ul li:hover,
+#footer nav ul li.active {
+  background-color: #f0f0f0; /* Background color for hover and when the item is active */
+}
+
+footer a.active,
+.footer a:hover{
+  
+  background: linear-gradient(to right, #4f058ff4, #ff00c3); 
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+#footer nav ul li {
+  display: inline-block;
+  margin-right: 8px;
+
+  align-items: center; /* Center vertically */
+  justify-content: center; 
+  border: 1px solid #cdcfd2; /* for a border around each li */
+  padding: 4px; /* for padding for better visual appearance */
+  border-radius: 8px; /* for rounded corners */
+}
+#footer, #footer p {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  padding: 10px;
+
+}
+
+ 
+}
+
+  <!-- < =======media quaties=======> -->
+  
+  @media (max-width: 768px) {
+ 
+    .detel {
+        align-items: center !important;
+       
+    }
+    .detel h1 {
+        font-size: 50px;
+        margin-top: 40%;
+  
+        color: #bcb1b1;
+        align-items: center !important;
+    }
+    
+    .detel p {
+        color: #bcb1b1;
+        line-height: 22px;
+    }
+    .description {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 2%;
+        font-size: 12px;
+        font-weight: 500;
+        color: #bcb1b1;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+        /* font-weight: bold; */
+        ;
+    }
+    .down {
+        color: orange;
+        background-color: #bcb1b1;
+    }
+    .info-display {
+        display: block;
+      
+    }
+    .info {
+        padding-left: -1%;
+        margin-left: 20px;
+    }
+    .info h1 {
+        width: 100%;
+        font-size: 30PX;
+        font-weight: bold;
+        color: orange;
+        margin-left: -10%;
+     
+       text-align: center ;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    }
+    .info li span{
+        background-color: #bcb1b1;
+        color:rgb(250, 218, 148)
+    }
+  
+    
+    .info li {
+        background-color: #bcb1b1;
+        margin-left: -12%;
+        /* padding-right: -10% !important; */
+        width: 100%;
+        font-size: 12px;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+        font-weight: 600;
+        padding: 3%;
+        /* padding-right: -10% !important; */
+        color: orange !important;
+    }
+   
+
+    
+    .contant .media {
+        padding: 15px;
+        display: inline !important;
+        justify-content: wrap;
+        color: rgb(247, 195, 84);
+    }
+    
+    .contant .media a {
+        color: rgb(247, 195, 84);
+    }
+    
+    .contant .media a:hover {
+        color: rgb(22, 94, 97);
+    }
+    /* aboutme */
+    .ABOUTME {
+        text-align: center;
+        margin-top: -80% !important;
+        color: orange;
+        font-size: 30px !important;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    }
+    
+    .interest h1 {
+        width: 100%;
+        font-size: 30PX;
+        font-weight: medium !important;
+        color: orange;
+        text-align: center;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    }
+    
+    .interest {
+        border-left:none;
+       
+        height: 290px;
+        right: 30%;
+        left: 50%;
+        margin-left: -20px;
+        padding-left: 5%;
+        padding-right: 3%; 
+     } 
+        
+    .interest li {
+        padding: 3%;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+        margin-right: 1%;
+        padding-right: 2%;
+        padding-left: -1%;
+        font-size: 13px;
+        background-color: #1d1e1f !important;
+        font-weight: 600;
+        color: orange;
+    }
+    
+    .language {
+        padding-left: 1%; 
+        border-left: none;
+        height: 290px;
+        right: 30%;
+        
+          left: 50%;                                      
+          margin-left: -20px;
+         
+      }
+    
+    .language ul li span {
+        font-size: 10px;
+    }
+  
+    .language li {
+        background-color: #26282c !important;
+       
+    }
+    .language li {
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+        margin-right: 1%;
+        padding-right: 2%;
+        padding: 2%;
+        margin-left: 4%;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgb(250, 139, 11);
+    }
+    .language li span{
+        background-color: #bcb1b1;
+        color: rgb(248, 226, 185);
+    }
+    .language h1 {
+        color: orange;
+        font-family: "Segoe UI", Roboto, Helvetica,Arial, serif;
+    }
+   
+    
+  
+
+
+    
+    
+   
+
+
+  
